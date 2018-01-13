@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="sf_database_qx" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.56.101;Initial Catalog=sf_database_qx;User ID=sa;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="CY.Iot.Common.Properties.Settings" SettingsPropertyName="sf_database_qxConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Iot_FunctionMenu" Member="Iot_FunctionMenu">
+    <Type Name="Iot_FunctionMenu">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MenuName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsGroup" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MainMenuID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MenuOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RootID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Iot_FunctionDefine" Member="Iot_FunctionDefine">
+    <Type Name="Iot_FunctionDefine">
+      <Column Name="RootID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FunName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="URI" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="WinType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RightCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Iot_ChildFunctionBar" Member="Iot_ChildFunctionBar">
+    <Type Name="Iot_ChildFunctionBar">
+      <Column Name="CID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RootID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FunName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="URI" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="WinType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RightCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OrderID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsGroup" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Iot_OperatorMaping" Member="Iot_OperatorMaping">
+    <Type Name="Iot_OperatorMaping">
+      <Column Name="OperID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IotOperID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IotOperName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IotOperPwd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Iot_CompanyAccount" Member="CompanyAccount">
+    <Type Name="CompanyAccount">
+      <Column Name="CompanyID" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CompanyName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CompanyPwd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ServiceURL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Frame_MainMenu" Member="Frame_MainMenu">
+    <Type Name="Frame_MainMenu">
+      <Column Name="MainMenuID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MenuOrderID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MenuName" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IsMdiChildrenListItem" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Dictionary" Member="Dictionary">
+    <Type Name="Dictionary">
+      <Column Name="ID" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PValue1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PValue2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IsEdit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ReportTemplate" Member="ReportTemplate">
+    <Type Name="ReportTemplate">
+      <Column Name="RID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ReportName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ReportType" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="RD_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReportTemplate" Member="ReportTemplate1" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="MenuName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsUse" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

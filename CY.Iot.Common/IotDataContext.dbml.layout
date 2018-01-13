@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="IotDataContext">
+  <DataContextMoniker Name="/IotDataContextDataContext" />
+  <nestedChildShapes>
+    <classShape Id="dad65527-dc8c-49ee-99fd-5105b49dec03" absoluteBounds="0.5, 0.625, 2, 5.2331872558593746">
+      <DataClassMoniker Name="/IotDataContextDataContext/View_MeterTopUp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f483201d-e38d-4599-b23d-c5655fa817eb" absoluteBounds="0.51499999999999968, 1.085, 1.9700000000000002, 4.673187255859375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3f822d65-67e7-40d5-af82-fe72b0e1c20c" absoluteBounds="3.125, 0.625, 2, 3.9396284993489576">
+      <DataClassMoniker Name="/IotDataContextDataContext/Iot_TopUpRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="566db27b-bbc0-4cf8-af1a-bb0ba25b94d0" absoluteBounds="3.14, 1.085, 1.9700000000000002, 3.379628499348958" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

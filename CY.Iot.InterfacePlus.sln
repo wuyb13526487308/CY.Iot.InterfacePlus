@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CY.Iot.InterfacePlus", "CY.Iot.InterfacePlus\CY.Iot.InterfacePlus.csproj", "{22F6788D-0B4A-4A9B-9825-1C1C7A557418}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI组件", "UI组件", "{96E663E1-09F9-4A4D-8C81-CB149199DCAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CY.SF_Server", "测试代码\CY.SF_Server\CY.SF_Server.csproj", "{9C96060F-7155-4699-9157-97F032075354}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSystem", "测试代码\FrameApplicationTest\AppSystem.csproj", "{8551CC9C-32FB-47B8-8AA2-73B05B88DB0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "测试系统", "测试系统", "{1032757A-A42B-4712-B451-78A6F7E90AEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{FD317B75-1683-426D-BDCF-C7DD60967FE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CY.Iot.Common", "CY.Iot.Common\CY.Iot.Common.csproj", "{ACA2B2E6-DAD0-4358-A37D-4C0B8E9A4F12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CY.Iot.DataService", "CY.Iot.DataService\CY.Iot.DataService.csproj", "{DEA5A64B-783B-4AF8-A732-0D1B4D95E459}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22F6788D-0B4A-4A9B-9825-1C1C7A557418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F6788D-0B4A-4A9B-9825-1C1C7A557418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F6788D-0B4A-4A9B-9825-1C1C7A557418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F6788D-0B4A-4A9B-9825-1C1C7A557418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C96060F-7155-4699-9157-97F032075354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C96060F-7155-4699-9157-97F032075354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C96060F-7155-4699-9157-97F032075354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C96060F-7155-4699-9157-97F032075354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8551CC9C-32FB-47B8-8AA2-73B05B88DB0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8551CC9C-32FB-47B8-8AA2-73B05B88DB0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8551CC9C-32FB-47B8-8AA2-73B05B88DB0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8551CC9C-32FB-47B8-8AA2-73B05B88DB0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD317B75-1683-426D-BDCF-C7DD60967FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD317B75-1683-426D-BDCF-C7DD60967FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD317B75-1683-426D-BDCF-C7DD60967FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD317B75-1683-426D-BDCF-C7DD60967FE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACA2B2E6-DAD0-4358-A37D-4C0B8E9A4F12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA2B2E6-DAD0-4358-A37D-4C0B8E9A4F12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA2B2E6-DAD0-4358-A37D-4C0B8E9A4F12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA2B2E6-DAD0-4358-A37D-4C0B8E9A4F12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEA5A64B-783B-4AF8-A732-0D1B4D95E459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA5A64B-783B-4AF8-A732-0D1B4D95E459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEA5A64B-783B-4AF8-A732-0D1B4D95E459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEA5A64B-783B-4AF8-A732-0D1B4D95E459}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C96060F-7155-4699-9157-97F032075354} = {1032757A-A42B-4712-B451-78A6F7E90AEF}
+		{8551CC9C-32FB-47B8-8AA2-73B05B88DB0E} = {1032757A-A42B-4712-B451-78A6F7E90AEF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D59CE201-457C-4D28-A261-FAB97415110D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="sf_database_qx" Class="IotDataContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.56.101;Initial Catalog=sf_database_qx;User ID=sa;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="CY.Iot.Common.Properties.Settings" SettingsPropertyName="sf_database_qxConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.View_MeterTopUp" Member="View_MeterTopUp">
+    <Type Name="View_MeterTopUp">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Ser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Street" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Community" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Door" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="MeterID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MeterNo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="TopUpDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TopUpType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Oper" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OrgCode" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="State" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CompanyID" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="TaskID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Context" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsPrint" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PayType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="SFOperID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SFOperName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Iot_TopUpRecord" Member="Iot_TopUpRecord">
+    <Type Name="Iot_TopUpRecord">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MeterID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MeterNo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="TopUpDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TopUpType" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Oper" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="OrgCode" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="State" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="TaskID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Context" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PayType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
